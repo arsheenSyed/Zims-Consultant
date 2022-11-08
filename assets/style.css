@@ -48,6 +48,10 @@ html {
   background-color: white !important;
 }
 
+.NavHome nav {
+  background-color: white !important;
+}
+
 .navbar-collapse {
   width: 100% !important;
 }
