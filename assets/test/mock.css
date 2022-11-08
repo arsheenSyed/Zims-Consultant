@@ -1,0 +1,12 @@
+.wrapper {
+  display: grid;
+  place-items: center;
+}
+
+.circular-progress {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background-color: orange;
+  border-radius: 50%;
+}

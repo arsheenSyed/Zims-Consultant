@@ -2,13 +2,50 @@
 
 /* -------------- Navbar ------------------ */
 
-/* body,html {
-    /* width: 100%; 
-    overflow-x: hidden !important;
-} */
+/* ------------------ General Styles ---------------------------- */
+body,
+html {
+  width: 100%;
+  overflow-x: hidden !important;
+  font-family: "Open Sans", sans-serif;
+}
+
+.section-title.blue .section-top-title .dash {
+  background-color: white !important;
+}
+.section-title.blue .section-top-title span.side-title {
+  color: white !important;
+}
+
+.section-title.blue {
+  color: white;
+}
+
+.bigImage .container,
+.section-2 .container,
+.section-3 .container,
+.section-4 .container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.section-4,
+.section-2,
+.bigImage {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.section-3 {
+  padding-left: 25px;
+}
+/* ------------------ General Styles ---------------------------- */
 
 .NavHome {
   box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.1);
+  background-color: white !important;
 }
 
 .navbar-collapse {
@@ -47,7 +84,7 @@
   height: 100vh;
 
   background-size: cover;
-  background-image: url("./hero.jpg");
+  background-image: url("./imgs/hero.jpg");
   background-repeat: no-repeat;
 
   display: flex;
@@ -61,40 +98,40 @@
   justify-content: start;
   align-items: flex-start;
   width: 100%;
-  height: 60%;
 }
-
 
 /* ------------------- Background Image --------------------------- */
 
 /* ---------- title --------------- */
 
 .top-title {
-  width: 250px;
+  width: 400px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
   align-items: center;
+  /* background-color: #7e63c4; */
 }
 
 .dash {
   width: 30px;
   height: 2px;
-  background-color: #8cc28c;
+  /* margin-left: 14px; */
+  background-color: #8cc226;
 }
 
 .top-text {
   font-weight: 500;
-  margin-right: 4px;
+  /* margin-right: 4px; */
   font-family: "EB Garamond";
-  color: #8cc28c;
-  font-size: 15px;
+  color: #8cc226;
+  font-size: 25px;
 }
 
 .mid-text {
   width: 400px;
   margin-top: 25px;
   /* background-color: blue;; */
-  margin-left: 12px;
+  /* margin-left: 20px; */
 }
 
 .mid-text h1 {
@@ -104,14 +141,14 @@
 }
 
 .mid-text h1 span {
-  color: #8cc28c;
+  color: #8cc226;
 }
 
 .mid-text p {
   color: white;
   margin-top: 30px;
   font-family: "Open Sans", serif;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .text button {
@@ -123,11 +160,589 @@
 }
 
 .text button:hover {
-  background-color: #7e63c4!important;
+  background-color: #7e63c4 !important;
+  color: white !important;
+  border: none !important;
+}
+/* ---------------------------------------- Hero Section ---------------------------------------- */
+/* ---------------------------- Section 2 ----------------------------- */
+
+.section-top-title .dash {
+  background-color: #356490;
+}
+
+.section-top-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.section-top-title span.side-title {
+  font-family: "EB Garamond", serif;
+  font-size: 25px;
+  color: #356490;
+}
+
+.section-title h1 {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 900;
+  color: #8cc226;
+}
+
+.section-title p {
+  margin-top: 12px;
+  font-size: 13px;
+  width: 400px;
+}
+.icon-wrapper h1 i {
+  font-size: 50px;
+}
+
+.icon-wrapper h3 {
+  font-size: 20px;
+  font-family: "EB Garamond", serif;
+  font-weight: bolder;
+  color: #8cc226;
+}
+
+.icon-wrapper i {
+  color: #356490;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon-content {
+  font-size: 14px;
+}
+
+.icon {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/* ------------------------ Section 2 ----------------------------------- */
+
+/* ------------------------ Section 3 ----------------------------------- */
+.section-3 {
+  background-color: #356490;
+}
+
+.section-title.blue .section-top-title .dash {
+  background-color: white !important;
+}
+.section-title.blue .section-top-title span.side-title {
+  color: white !important;
+}
+
+.section-title.blue {
+  color: white;
+}
+
+.section-3 p {
+  color: white;
+}
+
+.img-col {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.purple-btn {
+  margin-top: 20px;
+  background-color: #8771bd;
+  color: white;
+  font-family: "EB Garamond", serif;
+  letter-spacing: 1px;
+}
+
+.purple-btn:hover {
+  background-color: #7e63c4 !important;
   color: white !important;
   border: none !important;
 }
 
+/* ---------------------------------------------------------------------------------- */
+
+/* ----------------------------------------- Section 4 ------------------------------------ */
+
+.card img {
+  width: 100%;
+  height: 170px;
+}
+
+.card {
+  color: white;
+  /* width: 18rem; */
+  height: 100%;
+  background-color: #356490;
+  border-radius: 2px solid white;
+}
+
+.container-inner {
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
+}
+
+.details {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  /* height: 50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.details h3 {
+  font-family: "EB Garamond";
+  font-weight: 600;
+  font-size: 20px;
+  color: #8cc22c;
+}
+
+.details p {
+  font-size: 13px;
+}
+
+.card a {
+  color: #8cc22c;
+  font-weight: 900;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+/* .card-wrapper {
+  padding-left: 25px;
+  padding-right: 25px;
+} */
+
+/* --------------------------------------- Section 4 ----------------------------------------- */
+
+/* ------------------------------ Responsive COde ------------------------------------------- */
+
+@media (max-width: 768px) {
+  .bigImage {
+    background-size: cover;
+  }
+
+  .mid-text p .hide {
+    display: none;
+  }
+
+  .section-2 .section-title p {
+    width: 300px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* ------------------- Section 3 --------------------------- */
+  .section-3-content span {
+    display: none;
+  }
+  /* ------------------- Section 3 --------------------------- */
+}
+
+@media (max-width: 319.99px) {
+  .bigImage {
+    height: 300px;
+    background-position: right -1px;
+    background-image: linear-gradient(
+        rgba(53, 100, 144, 0.8),
+        rgba(53, 100, 144, 0.8)
+      ),
+      url("./heroPageLarge.jpg");
+  }
+
+  .top-text {
+    font-size: 15px;
+  }
+
+  .mid-text p {
+    display: none;
+  }
+
+  .mid-text h1 {
+    font-size: 27px;
+  }
+
+  .mid-text,
+  .mid-text p,
+  .mid-text button {
+    margin-top: 18px;
+  }
+
+  .mid-text button {
+    font-size: 15px;
+  }
+
+  /* ---------------------- section 2------------------------------- */
+  .section-2 .section-top-title span.side-title {
+    font-size: 20px;
+  }
+  /* ---------------------- section 2------------------------------- */
+
+  .section-4 .row .col-6 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 399.98px) {
+  .bigImage {
+    height: 300px;
+    background-position: right -1px;
+    background-image: linear-gradient(
+        rgba(53, 100, 144, 0.8),
+        rgba(53, 100, 144, 0.8)
+      ),
+      url("./heroPageLarge.jpg");
+  }
+
+  .top-text {
+    font-size: 18px;
+  }
+
+  .mid-text p {
+    display: none;
+  }
+
+  .mid-text h1 {
+    font-size: 27px;
+  }
+
+  .mid-text,
+  .mid-text p,
+  .mid-text button {
+    margin-top: 18px;
+  }
+
+  .mid-text button {
+    font-size: 15px;
+  }
+
+  /* ---------------------- section 2------------------------------- */
+  .section-2 .section-top-title span.side-title {
+    font-size: 20px;
+  }
+
+  .section-2 .row {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .section-2 .icon-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .icon-content h3 {
+    font-size: 18px;
+  }
+
+  .icon-content p {
+    font-size: 12px;
+  }
+
+  /* ---------------------- section 2------------------------------- */
+
+  /* ----------------- Section-3 ---------------------------- */
+
+  .section-3 img {
+    width: 280px;
+  }
+
+  /* .section-3-content {
+    font-size: 10px;
+  } */
+
+  /* ---------------- Section-3 ------------------------------- */
+
+  /* ---------------- Section 4 ----------------------- */
+
+  .section-4 .row {
+    flex-direction: column;
+  }
+
+  .section-4 .row .col-6 {
+    width: 100%;
+  }
+
+  /* ---------------- Section 4 ----------------------- */
+}
+
+@media (min-width: 400px) and (max-width: 474.98px) {
+  .bigImage {
+    height: 300px;
+    background-position: right 1px;
+  }
+
+  .top-text {
+    font-size: 20px;
+  }
+
+  .mid-text p {
+    display: none;
+  }
+
+  .mid-text h1 {
+    font-size: 27px;
+  }
+
+  .mid-text,
+  .mid-text p,
+  .mid-text button {
+    margin-top: 18px;
+  }
+
+  .mid-text button {
+    font-size: 15px;
+  }
+
+  /* ---------------------- section 2------------------------------- */
+  .section-2 .section-top-title span.side-title {
+    font-size: 20px;
+  }
+
+  .section-2 .icon-wrapper {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  /* ---------------------- section 2------------------------------- */
+
+  /* ------------------ Section 4 --------------------------------- */
+
+  .section-4 .card img {
+    height: 150px;
+  }
+
+  .section-4 .card .details h3 {
+    font-size: 18px;
+  }
+
+  .section-4 .card .details p {
+    font-size: 10px;
+  }
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 475px) and (max-width: 575.98px) {
+  .bigImage {
+    height: 400px;
+    background-position: right 1px;
+  }
+
+  .top-text {
+    font-size: 20px;
+  }
+
+  .mid-text p {
+    display: none;
+  }
+
+  .mid-text h1 {
+    font-size: 30px;
+  }
+
+  .mid-text,
+  .mid-text p,
+  .mid-text button {
+    margin-top: 18px;
+  }
+
+  /* ------------------- section 2 --------------------------- */
+
+  .icon-wrapper h1 i {
+    font-size: 40px;
+  }
+
+  .icon-wrapper h3 {
+    font-size: 18px;
+  }
+
+  .icon-wrapper i {
+    color: #356490;
+  }
+
+  .icon-content {
+    font-size: 13px;
+  }
+
+  .section-2 .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .icon-wrapper {
+    justify-content: space-between;
+  }
+  /* ------------------- section 2 --------------------------- */
+
+  /* ------------------ Section 4 --------------------------- */
+
+  .card img {
+    height: 160px;
+  }
+
+  .card .details h3 {
+    font-size: 19px;
+  }
+
+  .card .details p {
+    font-size: 10px;
+  }
+  /* ----------------- section 4 ----------------------------- */
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .bigImage {
+    background-position: right 1%;
+    height: 500px;
+  }
+
+  .top-text {
+    font-size: 20px;
+  }
+
+  .mid-text p {
+    font-size: 13px;
+    line-height: 2;
+    width: 280px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .mid-text h1 {
+    font-size: 30px;
+  }
+
+  .mid-text,
+  .mid-text p,
+  .mid-text button {
+    margin-top: 10px;
+  }
+
+  /* ------------------- section 2 --------------------------- */
+
+  .icon-wrapper h1 i {
+    font-size: 45px;
+  }
+
+  .icon-wrapper h3 {
+    font-size: 18px;
+  }
+
+  .icon-wrapper i {
+    color: #356490;
+  }
+
+  .icon-content {
+    font-size: 13px;
+  }
+
+  .section-2 .row {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .icon-wrapper {
+    justify-content: space-evenly;
+  }
+  /* ------------------- section 2 --------------------------- */
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .bigImage {
+    height: 500px;
+    background-position: right 1%;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* --------------------------- General Styles ------------------------ */
+
+  /* ----------------------- Section-2 ----------------------------- */
+
+  .img-col img {
+    width: 300px;
+  }
+
+  .icon-wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  /* ---------------------- Section-2 ------------------------------ */
+
+  .section-3 img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .img-col img {
+    width: 350px;
+  }
+
+  .icon-wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .section-3 img {
+    height: 500px;
+    width: 500px;
+  }
+}
+
+/* 
+/* ------------------------ Section 3 ----------------------------------- */
+/*
+@media (min-width: 1200px) {
+  .section-3 .container {
+    max-width: 1240px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 960px;
+  }
+}
+@media (min-width: 768px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 720px;
+  }
+}
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 540px;
+  }
+}
+
+*/
 /* ----------------------------- Responsive Divs ------------------------ */
 
 /* Extra small devices (phones, 600px and down)
@@ -136,185 +751,4 @@
 }
 
 */
-
-@media only screen and (min-width: 356px) and (max-width:   0px) {
-  .bigImage {
-    background-size: contain;
-  }
-
-  .container.overlay {
-    height: 90%;
-  }
-  /* ------------ top title ------------------- */
-  .top-title {
-   
-    width: 180px;
-  }
-
-  .dash {
-    height: 1px;
-    width: 30px;
-  }
-  .top-text {
-    font-size: 10px;
-  }
-
-  /* ------------ top title ------------------- */
-
-  /* ------------- mid-text ---------------------- */
-  .mid-text {
-    margin-left: 8px;
-    margin-top: 10px;
-    width: 150px;
-  }
-
-  .mid-text h1 {
-    font-size: 20px;
-  }
-
-  .mid-text p {
-    display: none;
-    margin-top: 5px;
-    font-size: 8px;
-  }
-
-  .mid-text p span {
-    display: none;
-  }
-
-  .mid-text button {
-   font-size: 9px;
-    margin-top: 10px;
-  }
-  /* ------------- mid-text ---------------------- */
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 491px) and (max-width: 584px) {
-  .bigImage {
-    background-size: contain;
-  }
-  .container.overlay {
-    height: 65%;
-  }
-
-  .text {
-    width: 40%;
-  }
-
-  /* ------------ top title ------------------- */
-  .top-title {
-   
-    width: 260px;
-  }
-
-  .dash {
-    width: 30px;
-  }
-  .top-text {
-    font-size: 15px;
-  }
-
-  /* ------------ top title ------------------- */
-
-  /* ------------- mid-text ---------------------- */
-  .mid-text {
-    margin-left: 18px;
-    margin-top: 10px;
-    width: 200px;
-  }
-
-  .mid-text h1 {
-    font-size: 25px;
-  }
-
-  .mid-text p {
-    margin-top: 10px;
-    font-size: 10px;
-  }
-
-  .mid-text p span {
-    display: none;
-  }
-
-  .mid-text button {
-    margin-top: 5px;
-  }
-  /* ------------- mid-text ---------------------- */
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 585px) and (max-width: 768px) {
-  .bigImage {
-    background-size: contain;
-  }
-
-  .container.overlay {
-    height: 80%;
-  }
-
-  /* ------------ top title ------------------- */
-  .top-title {
-    width: 280px;
-  }
-
-  .dash {
-    width: 30px;
-  }
-  .top-text {
-    font-size: 15px;
-  }
-
-  /* ------------ top title ------------------- */
-
-  /* ------------- mid-text ---------------------- */
-  .mid-text {
-    margin-left: 18px;
-    margin-top: 15px;
-    width: 200px;
-  }
-
-  .mid-text h1 {
-    font-size: 28px;
-  }
-
-  .mid-text p {
-    margin-top: 15px;
-  }
-
-  .mid-text p span {
-    display: none;
-  }
-
-  .mid-text button {
-    margin-top: 10px;
-  }
-  /* ------------- mid-text ---------------------- */
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
-
-
-/*
-
-echo "# Zims-Consultancy-React" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/arsheenSyed/Zims-Consultancy-React.git
-git push -u origin main
-
-…or push an existing repository from the command line
-git remote add origin https://github.com/arsheenSyed/Zims-Consultancy-React.git
-git branch -M main
-git push -u origin main
-
-
-*/
+/* --------------- common responsive styles ----------------*/
