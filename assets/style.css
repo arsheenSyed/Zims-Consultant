@@ -24,7 +24,11 @@ html {
 .bigImage .container,
 .section-2 .container,
 .section-3 .container,
-.section-4 .container {
+.section-4 .container,
+.section-6 .container,
+.section-7 .container,
+.section-8 .container,
+.footer .container {
   max-width: 100%;
   margin: 0;
   padding: 0;
@@ -33,14 +37,19 @@ html {
 
 .section-4,
 .section-2,
+.section-6,
+.section-7,
+.section-8,
+footer,
 .bigImage {
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 35px;
+  padding-left: 35px;
 }
 
 .section-3 {
-  padding-left: 25px;
+  padding-left: 35px;
 }
+
 /* ------------------ General Styles ---------------------------- */
 
 .NavHome {
@@ -331,6 +340,318 @@ html {
 } */
 
 /* --------------------------------------- Section 4 ----------------------------------------- */
+/*-------------------------------------- Section 5 --------------------------------------------------  */
+
+.dynamicCircle {
+  text-align: center;
+}
+
+.dynamicCircle div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skill {
+  width: 160px;
+  height: 160px;
+  /* width: 120px;
+  height: 120px; */
+  /* background-color: white; */
+  /* background: cornflowerblue; */
+  position: relative;
+  /* margin-left: 15px; */
+}
+
+.outer {
+  height: 160px;
+  width: 160px;
+  /* height: 120px;
+  width: 120px; */
+  border-radius: 50%;
+  /* border: 1px solid red; */
+  /* background-color: white; */
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 16px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner {
+  height: 120px;
+  width: 120px;
+  /* height: 80px;
+  width: 80px; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: white; */
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#number {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+circle {
+  fill: none;
+  stroke: #8cc22c;
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  /* stroke-dasharray: 300;
+  stroke-dashoffset: 300; */
+  animation: anim 2s linear forwards;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 40;
+  }
+}
+
+.dynamicCircle h3 {
+  font-family: "EB Garamond", serif;
+  font-weight: 600;
+  color: #8cc22c;
+}
+
+/* .space-blue { */
+/* position: relative;
+  transform: skewY(5deg);
+  width: 100%;
+  height: 100px;
+  background-color: #356490;
+}
+
+.space-blue:after {
+  content: "";
+  background-color: #356490;
+  display: block;
+  width: 100%;
+  height: 95px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  transform: skewY(-5deg);
+  z-index: -1;
+  /* transform: rotate(-4deg); */
+
+.section-5-wrapper .section-5 {
+  background-color: #356490;
+}
+
+/*-------------------------------------- Section 5 --------------------------------------------------  */
+
+/* ------------------------------------ Section 6 -------------------------------------------------- */
+
+section {
+  display: grid;
+  place-items: center;
+  /* height: 50vh; */
+  height: auto;
+}
+
+.section-header {
+  position: relative;
+  text-align: center;
+  font-weight: 900;
+  padding-bottom: 25px;
+  color: #fff;
+}
+
+.section-header:after {
+  content: "";
+  height: 3px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 100px);
+  background: #fff;
+}
+
+.section-header span {
+  display: block;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.testimonials {
+  max-width: 3000px;
+  /* padding: 0 15px 50px;
+  margin: 0 auto 80px auto; */
+}
+
+.single-item {
+  background: #fff;
+  color: #111;
+  padding: 15px;
+  /* margin: 50px 15px; */
+}
+
+.profile {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.img-area {
+  margin: 0 15px 15px 15px;
+}
+
+.img-area img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 7px solid #356490;
+}
+.content p {
+  text-align: justify;
+}
+
+.content p span {
+  font-size: 48px;
+  margin-right: 20px;
+  color: #356490;
+}
+
+.socials i {
+  margin-right: 25px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: #356490;
+}
+
+/* -------------------------------- Section-6 ---------------------------------------------------------- */
+
+/* ----------------------------- Section-7 ------------------------------- */
+.section-7 {
+  background-color: #356490;
+}
+
+.section-7 .row p {
+  color: white;
+}
+
+.section-7 .row button {
+  width: 100%;
+}
+
+.section-7-img {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.section-7-img img {
+  border-radius: 4px;
+}
+
+.section-7-icons {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-7-icons {
+  text-align: center;
+}
+
+.section-7-icons p {
+  width: 100px;
+  word-wrap: break-word;
+  font-size: 12px;
+}
+
+.section-7-icons i {
+  font-size: 40px;
+  color: #8cc22c;
+}
+.section-7-icons h3 {
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+/* --------------------------- Section-7 ----------------------------------- */
+
+/* -------------------------- Section-8 ---------------------------- */
+
+.section-8 button {
+  width: 100%;
+}
+
+.section-8 .map {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* -------------------------- Section-8 ---------------------------- */
+
+/* -------------------------- footer ---------------------------- */
+
+footer {
+  background-color: #356490;
+}
+
+.footer-1 p {
+  color: white;
+}
+
+.footer-1 .section-title h1 {
+  font-size: 25px;
+}
+
+.footer-1-icon {
+  margin-top: 13px;
+  color: white;
+  font-family: "EB Garamond", serif;
+}
+
+.footer-1-icon i {
+  color: #8cc22c;
+
+  font-size: 25px;
+}
+
+.footer-2 h3 {
+  color: #8cc22c;
+  font-family: "EB Garamond", serif;
+  font-weight: 800;
+}
+
+.footer-2 ul li {
+  color: white;
+  margin-top: 30px;
+}
+
+.footer-3-icons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+}
+
+.footer-3-icons span i {
+  font-size: 25px;
+  color: white;
+}
+/* -------------------------- footer ---------------------------- */
 
 /* ------------------------------ Responsive COde ------------------------------------------- */
 
@@ -355,8 +676,34 @@ html {
     display: none;
   }
   /* ------------------- Section 3 --------------------------- */
+
+  /* ---------------- Section 5 ----------------------------- */
+  .section-3 .container .row .section-5-content {
+    padding-right: 25px;
+  }
+  /* ---------------- Section 5 -----------------------m--------- */
+
+  .footer-2 {
+    margin-top: 20px;
+  }
+  .footer-3 {
+    margin-top: 20px;
+  }
 }
 
+@media (max-width: 991.98px) {
+  .section-7-img img {
+    width: 100%;
+  }
+
+  .section-8 .map {
+    margin-top: 30px;
+  }
+
+  .footer-3-icons {
+    width: 200px;
+  }
+}
 @media (max-width: 319.99px) {
   .bigImage {
     height: 300px;
@@ -673,6 +1020,11 @@ html {
     height: 500px;
     background-position: right 1%;
   }
+
+  /* ----------------------- Section-7 ----------------- */
+  /* .section-7-img {
+    justify-content: flex-end;
+  } */
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -696,6 +1048,17 @@ html {
     width: 400px;
     height: 400px;
   }
+
+  /* -------------------- Section-5 ------------------------------- */
+  /* .space-blue:after {
+    background-color: #356490;
+    width: 60%;
+    height: 55px;
+    left: 50%;
+    bottom: 78px;
+    transform: skewY(deg);
+  } */
+  /* -------------------- Section-5 ------------------------------- */
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
@@ -713,6 +1076,14 @@ html {
     height: 500px;
     width: 500px;
   }
+
+  /* --------------------------- section -5 ------------------------ */
+  /* .section-5 {
+    margin-top: 80px;
+    height: 750px;
+  } */
+
+  /* ------------------------- section-5 --------------------- */
 }
 
 /* 

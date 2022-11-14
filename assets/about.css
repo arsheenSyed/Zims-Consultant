@@ -1,0 +1,92 @@
+.about-1 .container,
+.about-carousel .container,
+footer .container,
+.contact-1 .container,
+.locations .container,
+.locations-title .container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.about-1,
+.contact-1,
+.locations-title,
+.locations {
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+.about .carousel img {
+  height: 700px;
+}
+
+.about-1 .col-md-4 {
+  margin-top: 15px;
+}
+
+.about-1 .col-md-4 img {
+  width: 100%;
+}
+.section-3 {
+  padding-left: 35px;
+}
+
+/* ----------------------- contact -------------------------- */
+
+.contactus {
+  background-color: #356490;
+}
+.contact-1 img {
+  width: 100%;
+}
+
+/* .locations {
+  background-color: #356490;
+  position: relative;
+} */
+
+.locations img {
+  width: 100%;
+}
+
+.contact-address {
+  background-image: linear-gradient(
+      rgba(53, 100, 144, 0.9),
+      rgba(53, 100, 144, 0.9)
+    ),
+    url("../assets/imgs/contactpagegif.gif");
+  padding-left: 50px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.contact-address h3 {
+  font-family: "EB Garamond", serif;
+  color: #8cc22c;
+}
+
+.contact-address p {
+  color: #fff;
+}
+
+.contact-address p {
+  font-family: "EB Garamond", serif;
+}
+/* ---------------------- contact -------------------------- */
+
+@media (max-width: 991.98px) {
+  .about .carousel img {
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about .carousel img {
+    height: 300px;
+  }
+}
