@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
+    <meta name="theme-color" content="#356490" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,6 +15,17 @@
 
     <link rel="stylesheet" href="style.css" />
 
+    <!-- emailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("3il3ZTg1qCJCt8WnV");
+      })();
+    </script>
+    <!-- emailJS -->
     <!-- carousel -->
     <!-- <link
       rel="stylesheet"
@@ -139,35 +152,40 @@
 
       <div class="bigImage">
         <div class="container overlay">
-          <div class="text">
+          <div class="text" data-aos="fade-left" data-aos-duration="2000">
             <div class="top-title">
               <div class="dash"></div>
-              <span class="top-text">
-                &ensp; We want you to see you succeed</span
-              >
+              <span class="top-text"> &ensp; We want to see you succeed</span>
             </div>
             <!-- ---------------- Title  ------------------>
 
             <!-- ---------------- Title  ------------------>
             <div class="mid-text">
               <h1>
-                You're <span>Success</span>
+                You're <span class="typing"></span>
                 <br />
 
-                <span>Our </span>Business
+                <!-- <span class="typing-2"> </span> Business -->
               </h1>
 
               <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore
+                Making Your Business Successful isn’t easy. That’s why
+                <b>Zims</b>
+                is here to help you with business, careers to make it grow and
+                attract Clients and make it bold.
                 <span class="hide"
-                  >magna aliqua. Ut enim ad minim veniam, >quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.</span
+                  ><b>Zims</b> Group is all about strategy, to grow your
+                  business and help you in your careers</span
                 >
               </p>
 
-              <button type="button" class="btn btn-lg">Find out more</button>
+              <!-- <a href="./about.html" class="btn-animation btn-white mt-3">
+                Find Out More
+              </a> -->
+              <a href="./about.html" class="btn btn-lg mt-3 purple-btn"
+                >Find Out More</a
+              >
+              <!-- <button type="button" class="btn btn-lg">Find out more</button> -->
             </div>
           </div>
         </div>
@@ -175,7 +193,11 @@
       <!-- Navbar -->
 
       <!-- -----------------------------Section 2 -------------------------------- -->
-      <div class="section-2 pt-5 pb-5">
+      <div
+        class="section-2 pt-5 pb-5"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      >
         <!-- pt-sm-3 pb-sm-3 pt-xs-3 pb-xs-3 pt-lg-5 pb-lg-5 pt-xl-5 pb-xl-5 -->
         <div class="container">
           <div class="section-title">
@@ -183,73 +205,133 @@
               <div class="dash"></div>
               <span class="side-title">&ensp; Where can we help you</span>
             </div>
-            <h1>Lorem Ipsum</h1>
+            <h1>Consultancy <br />Insustries</h1>
             <p class="pt-2">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              We are all set up to help you in a journey to look for this
             </p>
           </div>
           <div class="row pt-5">
-            <div class="col-6 col-sm-6 col-md-4 icon-wrapper">
+            <div
+              class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 icon-wrapper"
+              data-aos="flip-up"
+              data-aos-duration="1500"
+            >
               <div class="icon">
-                <h1><i class="fa-solid fa-scale-balanced"></i></h1>
+                <h1>
+                  <i class="fa-solid fa-money-bill"></i>
+
+                  <!-- <i class="fa-solid fa-chart-pie"></i> -->
+                </h1>
               </div>
 
               <div class="icon-content">
-                <h3>Solicitory</h3>
-                <p>"Lorem ipsum dolor sit</p>
+                <h3>Local Sponsorship</h3>
+                <p>
+                  We have a low-cost strategy to build brand recognition, get
+                  publicity, and broaden your reach is local sponsorship.
+                </p>
               </div>
             </div>
-            <div class="col-6 col-sm-6 col-md-4 icon-wrapper">
+            <div
+              class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 icon-wrapper"
+              data-aos="flip-up"
+              data-aos-duration="1500"
+            >
+              <div class="icon">
+                <h1>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <!-- <i class="fa-solid fa-scale-balanced"></i> -->
+                </h1>
+              </div>
+
+              <div class="icon-content">
+                <h3>Jobs</h3>
+                <p>
+                  We provide you assistance with Jobs of doctors, nurses and
+                  medical
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 icon-wrapper"
+              data-aos="flip-up"
+              data-aos-duration="1500"
+            >
               <div class="icon">
                 <h1><i class="fa-solid fa-chart-pie"></i></h1>
               </div>
 
               <div class="icon-content">
-                <h3>BusinessPlanning</h3>
-                <p>"Lorem ipsum dolor sit</p>
-              </div>
-            </div>
-            <div class="col-6 col-sm-6 col-md-4 icon-wrapper">
-              <div class="icon">
-                <h1><i class="fa-solid fa-people-group"></i></h1>
-              </div>
-
-              <div class="icon-content">
-                <h3>HumanResources</h3>
-                <p>"Lorem ipsum dolor sit</p>
+                <h3>Business Set up</h3>
+                <p>
+                  We offer a step-by-step method that helps you start your
+                  business and is result-implementing.
+                </p>
               </div>
             </div>
 
-            <div class="col-6 col-sm-6 col-md-4 icon-wrapper">
+            <div
+              class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 icon-wrapper"
+              data-aos="flip-up"
+              data-aos-duration="1500"
+            >
               <div class="icon">
-                <h1><i class="fa-regular fa-lightbulb"></i></h1>
+                <h1>
+                  <i class="fa-solid fa-people-group"></i>
+                  <!-- <i class="fa-solid fa-plane-circle-check"></i> -->
+                  <!-- <i class="fa-regular fa-lightbulb"></i> -->
+                </h1>
               </div>
 
               <div class="icon-content">
-                <h3>Strategy</h3>
-                <p>"Lorem ipsum dolor sit</p>
+                <h3>Family Visa</h3>
+                <p>
+                  We offer complete assistance for the processing of your family
+                  visa in any nation with our family visa typing services
+                </p>
               </div>
             </div>
 
-            <div class="col-6 col-sm-6 col-md-4 icon-wrapper">
+            <div
+              class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 icon-wrapper"
+              data-aos="flip-up"
+              data-aos-duration="1500"
+            >
               <div class="icon">
-                <h1><i class="fa-solid fa-briefcase"></i></h1>
+                <h1>
+                  <i class="fa-solid fa-database"></i>
+                  <!-- <i class="fa-solid fa-briefcase"></i> -->
+                </h1>
               </div>
 
               <div class="icon-content">
-                <h3>StartUps</h3>
-                <p>"Lorem ipsum dolor sit</p>
+                <h3>Data Flow</h3>
+                <p>
+                  We Provide you best assistance with data flow for doctors,
+                  nurses and medical
+                </p>
               </div>
             </div>
 
-            <div class="col-6 col-sm-6 col-md-4 icon-wrapper">
+            <div
+              class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 icon-wrapper"
+              data-aos="flip-up"
+              data-aos-duration="1500"
+            >
               <div class="icon">
-                <h1><i class="fa-solid fa-people-roof"></i></h1>
+                <h1>
+                  <i class="fa-solid fa-user-graduate"></i>
+                  <!-- <i class="fa-solid fa-people-roof"></i> -->
+                </h1>
               </div>
 
               <div class="icon-content">
-                <h3>Organisations</h3>
-                <p>"Lorem ipsum dolor sit</p>
+                <h3>Tutoring</h3>
+                <p>
+                  We provide expert mentors to address the issues of different
+                  students at different levels.
+                </p>
               </div>
             </div>
           </div>
@@ -258,46 +340,54 @@
       <!-- -----------------------------Section 2 -------------------------------- -->
 
       <!-- -----------------------------Section 3 -------------------------------- -->
-      <div class="section-3 pt-5 pb-5">
+      <div
+        class="section-3 pt-5 pb-5"
+        data-aos="fade-left"
+        data-aos-duration="1500"
+      >
         <div class="container pt-4">
           <div class="row pt-4">
-            <div class="col-12 col-sm-6 col-md-7">
+            <div class="col-12 col-sm-12 col-md-7">
               <!-- <div class="container"> -->
               <div class="section-title blue">
                 <div class="section-top-title">
                   <div class="dash"></div>
-                  <span class="side-title">&ensp; What we do</span>
+                  <span class="side-title">&ensp; Who are we</span>
                 </div>
-                <h1>Lorem Ipsum</h1>
+                <h1>Zims Consultant</h1>
               </div>
               <div>
                 <p class="section-3-content pt-3">
-                  "Sed ut perspiciatis unde omnis iste natus error sit
-                  voluptatem accusantium doloremque laudantium, totam rem
-                  aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                  architecto beatae vitae dicta sunt explicabo.
-                  <span>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit, sed quia consequuntur magni dolores eos qui
-                    ratione voluptatem sequi totam rem aperiam, eaque ipsa quae
-                    ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo. "Sed ut perspiciatis unde omnis iste
-                    natus error sit voluptatem accusantium doloremque
-                    laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    inventore veritatis et quasi architecto beatae vitae dicta
-                    sunt explicabo.</span
-                  >
+                  ZIMS Consultancy is a consultancy servicing Businesses,
+                  Students and communities from different streams. We have a
+                  good grasp on starting businesses in Australia, America,
+                  Singapore and Malaysia. We also provide a detailed
+                  consultation if needed. We provide expert mentors to address
+                  the issues of different students at different levels. Since
+                  more than fifteen years ago, ZIMS (ZEAL TO INTEGRATE
+                  MERITORIOUS STUDENTS) has provided professional education and
+                  tutoring services to children and teenagers from Asia,
+                  America, and Africa who have a range of educational
+                  challenges. We interact with kids of diverse ages and
+                  socioeconomic backgrounds on a wide range of needs and levels.
                 </p>
 
-                <button type="button" class="btn btn-lg mt-3 purple-btn">
-                  Find out more
-                </button>
+                <a href="./about.html" class="btn btn-lg mt-3 purple-btn"
+                  >About us</a
+                >
+
                 <!-- </div> -->
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-5 img-col">
+            <div class="col-12 col-sm-12 col-md-5 img-col">
               <div class="img">
-                <img src="./imgs/about.png" />
+                <!-- <img src="./imgs/about.png" /> -->
+                <!-- <video
+                  src="../assets/imgs/WhatsApp Video 2022-11-16 at 15.05.32.mp4"
+                ></video> -->
+                <div class="shape">
+                  <img src="../assets/imgs/about.jpg" alt="" />
+                </div>
               </div>
             </div>
           </div>
@@ -306,16 +396,20 @@
       <!-- -----------------------------Section 3 -------------------------------- -->
 
       <!-- -------------------------- Section 4 ---------------------------------- -->
-      <div class="section-4 pt-5 pb-5">
+      <div
+        class="section-4 pt-5 pb-5"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      >
         <div class="container">
           <div class="section-title">
             <div class="section-top-title">
               <div class="dash"></div>
-              <span class="side-title">&ensp; Where can we help you</span>
+              <span class="side-title">&ensp; What we have done</span>
             </div>
-            <h1>Lorem Ipsum</h1>
+            <h1>Our Presence among you</h1>
             <p class="pt-2" style="color: black">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              our businesses, consultancy and tutoring services
             </p>
           </div>
 
@@ -343,7 +437,7 @@
                 aria-controls="nav-profile"
                 aria-selected="false"
               >
-                Startups
+                Careers
               </button>
               <button
                 class="nav-link"
@@ -355,7 +449,7 @@
                 aria-controls="nav-contact"
                 aria-selected="false"
               >
-                Solicitory
+                Others
               </button>
             </div>
           </nav>
@@ -370,22 +464,42 @@
               <div class="container">
                 <div class="row pt-3">
                   <div
-                    class="col-sm-6 col-6 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
                   >
                     <div class="card card1">
                       <div class="wrapper">
                         <div class="container-inner">
-                          <img src="./imgsCard/cardImg-2.jpg" alt="" />
+                          <img src="./imgs/doctern-1.jpg" alt="" />
                         </div>
 
                         <div class="details">
-                          <h3>New York</h3>
-                          <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do
-                          </p>
+                          <h3>Pro-Metric Guidance Center</h3>
+                          <p>Data Flow and Job Assistance</p>
 
-                          <a href="#"
+                          <a href="http://prometricguidance.com/"
+                            >See More <i class="fa-solid fa-chevron-right"></i
+                          ></a>
+                        </div>
+
+                        <!-- <div class="plus">+</div> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- others -->
+                  <div
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                  >
+                    <div class="card card1">
+                      <div class="wrapper">
+                        <div class="container-inner">
+                          <img src="./imgs/dubai.jpg" alt="" />
+                        </div>
+
+                        <div class="details">
+                          <h3>StartUp Dubai</h3>
+                          <p>Start Up Business Solutions</p>
+
+                          <a href="https://dubaistartup.in/"
                             >See More <i class="fa-solid fa-chevron-right"></i
                           ></a>
                         </div>
@@ -395,22 +509,19 @@
                     </div>
                   </div>
                   <div
-                    class="col-sm-6 col-6 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
                   >
                     <div class="card card1">
                       <div class="wrapper">
                         <div class="container-inner">
-                          <img src="./imgsCard/cardImg-1.jpg" alt="" />
+                          <img src="./imgs/doctor-2.jpg" alt="" />
                         </div>
 
                         <div class="details">
-                          <h3>New York</h3>
-                          <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do
-                          </p>
+                          <h3>Pro-Metric MOH</h3>
+                          <p>Data Flow and Job Assistance</p>
 
-                          <a href="#"
+                          <a href="https://www.mohsaudi.com/"
                             >See More <i class="fa-solid fa-chevron-right"></i
                           ></a>
                         </div>
@@ -418,21 +529,18 @@
                     </div>
                   </div>
                   <div
-                    class="col-sm-6 col-6 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
                   >
                     <div class="card card1">
                       <div class="wrapper">
                         <div class="container-inner">
-                          <img src="./imgsCard/cardImgs1.webp" alt="" />
+                          <img src="./imgs/doctor-3.jpg" alt="" />
                         </div>
 
                         <div class="details">
-                          <h3>New York</h3>
-                          <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do
-                          </p>
-                          <a href="#"
+                          <h3>Pro-Metric MOH U.A.E</h3>
+                          <p>Data Flow and Job Assistance U.A.E</p>
+                          <a href="https://www.dhauae.com/"
                             >See More <i class="fa-solid fa-chevron-right"></i
                           ></a>
                         </div>
@@ -441,21 +549,18 @@
                   </div>
 
                   <div
-                    class="col-sm-6 col-6 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                    class="col-sm-6 col-12 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
                   >
                     <div class="card card1">
                       <div class="wrapper">
                         <div class="container-inner">
-                          <img src="./imgsCard/cardImg-3.jpg" alt="" />
+                          <img src="./imgs/doctor-4.jpg" alt="" />
                         </div>
 
                         <div class="details">
-                          <h3>New York</h3>
-                          <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do
-                          </p>
-                          <a href="#"
+                          <h3>Pro-Metric MOH Hyderabad</h3>
+                          <p>Data Flow and Job Assistance Hyd</p>
+                          <a href="https://www.mohhyd.com/"
                             >See More <i class="fa-solid fa-chevron-right"></i
                           ></a>
                         </div>
@@ -463,23 +568,21 @@
                     </div>
                   </div>
 
+                  <!-- others -->
                   <div
-                    class="col-sm-6 col-6 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
                   >
                     <div class="card card1">
                       <div class="wrapper">
                         <div class="container-inner">
-                          <img src="./imgsCard/cardImg-3.jpg" alt="" />
+                          <img src="./imgs/advisor.jpeg" alt="" />
                         </div>
 
                         <div class="details">
-                          <h3>New York</h3>
-                          <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do
-                          </p>
+                          <h3>Zims Career Advisor</h3>
+                          <p>Career Advices</p>
 
-                          <a href="#"
+                          <a href="http://zimscareeradvisors.com/"
                             >See More <i class="fa-solid fa-chevron-right"></i
                           ></a>
                         </div>
@@ -487,24 +590,117 @@
                     </div>
                   </div>
 
+                  <!-- others -->
                   <div
-                    class="col-sm-6 col-6 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
                   >
                     <div class="card card1">
                       <div class="wrapper">
                         <div class="container-inner">
-                          <img src="./imgsCard/cardImg-4.jpg" alt="" />
+                          <img src="./imgs/law2.jpg" alt="" />
                         </div>
 
                         <div class="details">
-                          <h3>New York</h3>
-                          <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do
-                          </p>
+                          <h3>Law Students Federation</h3>
+                          <p>Law Students Organizations</p>
 
-                          <a href="#"
+                          <a href="http://lawstudentsfederation.co.in/"
                             >See More <i class="fa-solid fa-chevron-right"></i
+                          ></a>
+                        </div>
+
+                        <!-- <div class="plus">+</div> -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- others -->
+                  <div
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                  >
+                    <div class="card card1">
+                      <div class="wrapper">
+                        <div class="container-inner">
+                          <img src="./imgs/it.jpg" alt="" />
+                        </div>
+
+                        <div class="details">
+                          <h3>Aunir Wanda</h3>
+                          <p>one stop IT solutions</p>
+
+                          <a href="http://aaunirwanda.com/">
+                            See More <i class="fa-solid fa-chevron-right"></i
+                          ></a>
+                        </div>
+
+                        <!-- <div class="plus">+</div> -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                  >
+                    <div class="card card1">
+                      <div class="wrapper">
+                        <div class="container-inner">
+                          <img src="./imgs/doctor5.jpg" alt="" />
+                        </div>
+
+                        <div class="details">
+                          <h3>Academy for doctor</h3>
+                          <p>Tutors for Doctors</p>
+
+                          <a href="http://academy4doctor.com/">
+                            See More <i class="fa-solid fa-chevron-right"></i
+                          ></a>
+                        </div>
+
+                        <!-- <div class="plus">+</div> -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- others -->
+                  <div
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                  >
+                    <div class="card card1">
+                      <div class="wrapper">
+                        <div class="container-inner">
+                          <img src="./imgs/legalfirm.jpg" alt="" />
+                        </div>
+
+                        <div class="details">
+                          <h3>Zims Legal Firm</h3>
+                          <p>Zims Legal Firm</p>
+
+                          <a href="#">
+                            See More <i class="fa-solid fa-chevron-right"></i
+                          ></a>
+                        </div>
+
+                        <!-- <div class="plus">+</div> -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- others -->
+                  <div
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                  >
+                    <div class="card card1">
+                      <div class="wrapper">
+                        <div class="container-inner">
+                          <img src="./imgs/tuition.jpg" alt="" />
+                        </div>
+
+                        <div class="details">
+                          <h3>Zims Tuitions</h3>
+                          <p>Tutors for different Streams</p>
+
+                          <a href="http://zimstutions.com/">
+                            See More <i class="fa-solid fa-chevron-right"></i
                           ></a>
                         </div>
 
@@ -525,22 +721,19 @@
               <div class="container">
                 <div class="row pt-3">
                   <div
-                    class="col-sm-6 col-6 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
                   >
                     <div class="card card1">
                       <div class="wrapper">
                         <div class="container-inner">
-                          <img src="./imgsCard/cardImg-2.jpg" alt="" />
+                          <img src="./imgs/doctern-1.jpg" alt="" />
                         </div>
 
                         <div class="details">
-                          <h3>New York</h3>
-                          <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do
-                          </p>
+                          <h3>Pro-Metric Guidance Center</h3>
+                          <p>Data Flow and Job Assistance</p>
 
-                          <a href="#"
+                          <a href="http://prometricguidance.com/"
                             >See More <i class="fa-solid fa-chevron-right"></i
                           ></a>
                         </div>
@@ -549,45 +742,21 @@
                       </div>
                     </div>
                   </div>
+
                   <div
-                    class="col-sm-6 col-6 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
                   >
                     <div class="card card1">
                       <div class="wrapper">
                         <div class="container-inner">
-                          <img src="./imgsCard/cardImg-1.jpg" alt="" />
+                          <img src="./imgs/doctor-2.jpg" alt="" />
                         </div>
 
                         <div class="details">
-                          <h3>New York</h3>
-                          <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do
-                          </p>
+                          <h3>Pro-Metric MOH</h3>
+                          <p>Data Flow and Job Assistance</p>
 
-                          <a href="#"
-                            >See More <i class="fa-solid fa-chevron-right"></i
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="col-sm-6 col-6 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
-                  >
-                    <div class="card card1">
-                      <div class="wrapper">
-                        <div class="container-inner">
-                          <img src="./imgsCard/cardImgs1.webp" alt="" />
-                        </div>
-
-                        <div class="details">
-                          <h3>New York</h3>
-                          <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do
-                          </p>
-                          <a href="#"
+                          <a href="https://www.mohsaudi.com/"
                             >See More <i class="fa-solid fa-chevron-right"></i
                           ></a>
                         </div>
@@ -596,21 +765,18 @@
                   </div>
 
                   <div
-                    class="col-sm-6 col-6 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
                   >
                     <div class="card card1">
                       <div class="wrapper">
                         <div class="container-inner">
-                          <img src="./imgsCard/cardImg-3.jpg" alt="" />
+                          <img src="./imgs/doctor-3.jpg" alt="" />
                         </div>
 
                         <div class="details">
-                          <h3>New York</h3>
-                          <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do
-                          </p>
-                          <a href="#"
+                          <h3>Pro-Metric MOH U.A.E</h3>
+                          <p>Data Flow and Job Assistance U.A.E</p>
+                          <a href="https://www.dhauae.com/"
                             >See More <i class="fa-solid fa-chevron-right"></i
                           ></a>
                         </div>
@@ -619,22 +785,18 @@
                   </div>
 
                   <div
-                    class="col-sm-6 col-6 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                    class="col-sm-6 col-12 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
                   >
                     <div class="card card1">
                       <div class="wrapper">
                         <div class="container-inner">
-                          <img src="./imgsCard/cardImg-3.jpg" alt="" />
+                          <img src="./imgs/doctor-4.jpg" alt="" />
                         </div>
 
                         <div class="details">
-                          <h3>New York</h3>
-                          <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do
-                          </p>
-
-                          <a href="#"
+                          <h3>Pro-Metric MOH Hyderabad</h3>
+                          <p>Data Flow and Job Assistance Hyd</p>
+                          <a href="https://www.mohhyd.com/"
                             >See More <i class="fa-solid fa-chevron-right"></i
                           ></a>
                         </div>
@@ -643,23 +805,20 @@
                   </div>
 
                   <div
-                    class="col-sm-6 col-6 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
                   >
                     <div class="card card1">
                       <div class="wrapper">
                         <div class="container-inner">
-                          <img src="./imgsCard/cardImg-4.jpg" alt="" />
+                          <img src="./imgs/doctor5.jpg" alt="" />
                         </div>
 
                         <div class="details">
-                          <h3>New York</h3>
-                          <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do
-                          </p>
+                          <h3>Academy for doctor</h3>
+                          <p>Tutors for Doctors</p>
 
-                          <a href="#"
-                            >See More <i class="fa-solid fa-chevron-right"></i
+                          <a href="http://academy4doctor.com/">
+                            See More <i class="fa-solid fa-chevron-right"></i
                           ></a>
                         </div>
 
@@ -680,22 +839,19 @@
               <div class="container">
                 <div class="row pt-3">
                   <div
-                    class="col-sm-6 col-6 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
                   >
                     <div class="card card1">
                       <div class="wrapper">
                         <div class="container-inner">
-                          <img src="./imgsCard/cardImg-2.jpg" alt="" />
+                          <img src="./imgs/dubai.jpg" alt="" />
                         </div>
 
                         <div class="details">
-                          <h3>New York</h3>
-                          <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do
-                          </p>
+                          <h3>StartUp Dubai</h3>
+                          <p>Start Up Business Solutions</p>
 
-                          <a href="#"
+                          <a href="https://dubaistartup.in/"
                             >See More <i class="fa-solid fa-chevron-right"></i
                           ></a>
                         </div>
@@ -705,22 +861,19 @@
                     </div>
                   </div>
                   <div
-                    class="col-sm-6 col-6 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
                   >
                     <div class="card card1">
                       <div class="wrapper">
                         <div class="container-inner">
-                          <img src="./imgsCard/cardImg-1.jpg" alt="" />
+                          <img src="./imgs/advisor.jpeg" alt="" />
                         </div>
 
                         <div class="details">
-                          <h3>New York</h3>
-                          <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do
-                          </p>
+                          <h3>Zims Career Advisor</h3>
+                          <p>Career Advices</p>
 
-                          <a href="#"
+                          <a href="http://zimscareeradvisors.com/"
                             >See More <i class="fa-solid fa-chevron-right"></i
                           ></a>
                         </div>
@@ -728,93 +881,86 @@
                     </div>
                   </div>
                   <div
-                    class="col-sm-6 col-6 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
                   >
                     <div class="card card1">
                       <div class="wrapper">
                         <div class="container-inner">
-                          <img src="./imgsCard/cardImgs1.webp" alt="" />
+                          <img src="./imgs/law2.jpg" alt="" />
                         </div>
 
                         <div class="details">
-                          <h3>New York</h3>
-                          <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do
-                          </p>
-                          <a href="#"
+                          <h3>Law Students Federation</h3>
+                          <p>Law Students Organizations</p>
+
+                          <a href="http://lawstudentsfederation.co.in/"
                             >See More <i class="fa-solid fa-chevron-right"></i
                           ></a>
                         </div>
+
+                        <!-- <div class="plus">+</div> -->
                       </div>
                     </div>
                   </div>
-
                   <div
-                    class="col-sm-6 col-6 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
                   >
                     <div class="card card1">
                       <div class="wrapper">
                         <div class="container-inner">
-                          <img src="./imgsCard/cardImg-3.jpg" alt="" />
+                          <img src="./imgs/it.jpg" alt="" />
                         </div>
 
                         <div class="details">
-                          <h3>New York</h3>
-                          <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do
-                          </p>
-                          <a href="#"
-                            >See More <i class="fa-solid fa-chevron-right"></i
+                          <h3>Aunir Wanda</h3>
+                          <p>one stop IT solutions</p>
+
+                          <a href="http://aaunirwanda.com/">
+                            See More <i class="fa-solid fa-chevron-right"></i
                           ></a>
                         </div>
+
+                        <!-- <div class="plus">+</div> -->
                       </div>
                     </div>
                   </div>
-
                   <div
-                    class="col-sm-6 col-6 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
                   >
                     <div class="card card1">
                       <div class="wrapper">
                         <div class="container-inner">
-                          <img src="./imgsCard/cardImg-3.jpg" alt="" />
+                          <img src="./imgs/legalfirm.jpg" alt="" />
                         </div>
 
                         <div class="details">
-                          <h3>New York</h3>
-                          <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do
-                          </p>
+                          <h3>Zims Legal Firm</h3>
+                          <p>Zims Legal Firm</p>
 
-                          <a href="#"
-                            >See More <i class="fa-solid fa-chevron-right"></i
+                          <a href="#">
+                            See More <i class="fa-solid fa-chevron-right"></i
                           ></a>
                         </div>
+
+                        <!-- <div class="plus">+</div> -->
                       </div>
                     </div>
                   </div>
-
                   <div
-                    class="col-sm-6 col-6 col-md-4 col-lg-4 col-xl-4 mt-3 card-wrapper"
+                    class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mt-3 card-wrapper"
                   >
                     <div class="card card1">
                       <div class="wrapper">
                         <div class="container-inner">
-                          <img src="./imgsCard/cardImg-4.jpg" alt="" />
+                          <img src="./imgs/tuition.jpg" alt="" />
                         </div>
 
                         <div class="details">
-                          <h3>New York</h3>
-                          <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do
-                          </p>
+                          <h3>Zims Tuitions</h3>
+                          <p>Tutors for different Streams</p>
 
-                          <a href="#"
-                            >See More <i class="fa-solid fa-chevron-right"></i
+                          <a href="http://zimstutions.com/">
+                            See More <i class="fa-solid fa-chevron-right"></i
                           ></a>
                         </div>
 
@@ -831,7 +977,11 @@
       <!-- -------------------------- Section 4 ---------------------------------- -->
 
       <!-- ------------------------- Section 5 ------------------------------ -->
-      <div class="section-5-wrapper">
+      <div
+        class="section-5-wrapper"
+        data-aos="fade-left"
+        data-aos-duration="1500"
+      >
         <!-- <div class="space-blue"></div> -->
         <div class="section-3 section-5 pt-5 pb-5">
           <div class="container pt-4">
@@ -850,19 +1000,27 @@
                 <div class="row">
                   <div class="col-md-6">
                     <p class="section-3-content pt-3">
-                      "Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam, eaque ipsa quae ab illo inventore veritatis et
-                      quasi architecto beatae vitae dicta sunt explicabo.
+                      Since more than fifteen years ago, ZIMS (ZEAL TO INTEGRATE
+                      MERITORIOUS STUDENTS) has provided professional education
+                      and tutoring services to children and teenagers from Asia,
+                      America, and Africa who have a range of educational
+                      challenges. We interact with kids of diverse ages and
+                      socioeconomic backgrounds on a wide range of needs and
+                      levels.
                     </p>
                   </div>
 
                   <div class="col-md-6">
                     <p class="section-3-content pt-3">
-                      "Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam, eaque ipsa quae ab illo inventore veritatis et
-                      quasi architecto beatae vitae dicta sunt explicabo.
+                      My reputation and the outcomes of the previous years have
+                      helped us build a career. I firmly feel that these
+                      elements combine to create a quiet, secure environment
+                      that is comfortable, nurturing, and caring. I work to
+                      instil confidence by understanding each person's needs and
+                      capabilities without passing judgement. We have a good
+                      grasp on starting businesses in Australia, America,
+                      Singapore and Malaysia. We also provide a detailed
+                      consultation if needed.
                     </p>
                   </div>
                 </div>
@@ -872,12 +1030,17 @@
                       <div class="skill">
                         <div class="outer">
                           <div class="inner">
-                            <div id="number">65%</div>
+                            <div id="number">
+                              <i
+                                class="fa-solid fa-hourglass-start"
+                                style="font-size: 50px"
+                              ></i>
+                            </div>
                           </div>
                         </div>
 
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns="http://www.w3.org/1500/svg"
                           version="1.1"
                           width="160px"
                           height="160px"
@@ -899,8 +1062,8 @@
                     </div>
                     <h3>Consistency</h3>
                     <p>
-                      Dynamically innovate customer service for state of the art
-                      customer.
+                      Podcasting operational change management inside of
+                      workflow.
                     </p>
                   </div>
                   <div class="col-12 co-sm-6 col-md-6 mt-3">
@@ -908,12 +1071,17 @@
                       <div class="skill">
                         <div class="outer">
                           <div class="inner">
-                            <div id="number">65%</div>
+                            <div id="number">
+                              <i
+                                class="fa-solid fa-arrow-up-right-dots"
+                                style="font-size: 60px"
+                              ></i>
+                            </div>
                           </div>
                         </div>
 
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns="http://www.w3.org/1500/svg"
                           version="1.1"
                           width="160px"
                           height="160px"
@@ -956,17 +1124,25 @@
 
       <!-- ----------------------- Section 6 --------------------------------- -->
 
-      <div class="section-6 pb-5 pt-5">
+      <div
+        class="section-6 pb-5 pt-5"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      >
         <div class="container">
           <div class="section-title">
             <div class="section-top-title">
               <div class="dash"></div>
-              <span class="side-title">&ensp; Where can we help you</span>
+              <span class="side-title"
+                >&ensp; Great Reviews for our Services</span
+              >
             </div>
-            <h1>Lorem Ipsum</h1>
-            <p class="pt-2" style="color: black">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            </p>
+            <h1>
+              Trusted By Some
+              <br />
+              Big Names
+            </h1>
+            <p class="pt-2" style="color: black"></p>
           </div>
 
           <div class="testimonials">
@@ -983,11 +1159,37 @@
                       <div class="col-md-5">
                         <div class="profile">
                           <div class="img-area">
-                            <img src="../assets/imgs/testimonial1.jpg" />
+                            <img src="./imgs/profile-1.png" />
                           </div>
                           <div class="bio">
-                            <h2>Dave Wood</h2>
-                            <p>Web Developer</p>
+                            <h2>Amaan Kashif</h2>
+
+                            <p class="" style="text-align: center">
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: #f8b805"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: #f8b805"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: #f8b805"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: #f8b805"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: #f8b805"
+                              ></i>
+                              <!-- <i class="fa fa-twitter"></i>
+                              <i class="fa fa-behance"></i>
+                              <i class="fa fa-youtube"></i>
+                              <i class="fa fa-dribble"></i> -->
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -995,11 +1197,12 @@
                       <div class="col-md-6">
                         <div class="content">
                           <p>
-                            <span><i class="fa fa-quote-left"></i></span>lorem
-                            ipsum dolor sit amet lorem ipsum dolor sit amet
-                            lorem ipsum dolor sit amet lorem ipsum dolor sit
-                            amet lorem ipsum dolor sit amet lorem ipsum dolor
-                            sit amet
+                            <span><i class="fa fa-quote-left"></i></span>one of
+                            the best home tut ions academy in Hyderabad they are
+                            in the market since a long time giving excellent
+                            services to the students community. Excellent set of
+                            tutors are there. they value education . excellent
+                            services
                           </p>
                           <p class="socials">
                             <i class="fa fa-twitter"></i>
@@ -1018,11 +1221,37 @@
                       <div class="col-md-5">
                         <div class="profile">
                           <div class="img-area">
-                            <img src="../assets/imgs/testimonial1.jpg" />
+                            <img src="../assets/imgs/profile-2.png" />
                           </div>
                           <div class="bio">
-                            <h2>Dave Wood</h2>
-                            <p>Web Developer</p>
+                            <h2>Mansoor Khan</h2>
+
+                            <p class="" style="text-align: center">
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: #f8b805"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: #f8b805"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: #f8b805"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: #f8b805"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: #f8b805"
+                              ></i>
+                              <!-- <i class="fa fa-twitter"></i>
+                              <i class="fa fa-behance"></i>
+                              <i class="fa fa-youtube"></i>
+                              <i class="fa fa-dribble"></i> -->
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -1030,11 +1259,12 @@
                       <div class="col-md-6">
                         <div class="content">
                           <p>
-                            <span><i class="fa fa-quote-left"></i></span>lorem
-                            ipsum dolor sit amet lorem ipsum dolor sit amet
-                            lorem ipsum dolor sit amet lorem ipsum dolor sit
-                            amet lorem ipsum dolor sit amet lorem ipsum dolor
-                            sit amet
+                            <span><i class="fa fa-quote-left"></i></span>one of
+                            the best for home tutions icse cbse igcse . they are
+                            only one in the market since 10 years providing
+                            tutions for mbbs subjects in malakpet , banjara
+                            hills . thanks for assistance for providing tutor
+                            for my brother.
                           </p>
                           <p class="socials">
                             <i class="fa fa-twitter"></i>
@@ -1053,11 +1283,37 @@
                       <div class="col-md-5">
                         <div class="profile">
                           <div class="img-area">
-                            <img src="../assets/imgs/testimonial1.jpg" />
+                            <img src="./imgs/profile-3.png" />
                           </div>
                           <div class="bio">
-                            <h2>Dave Wood</h2>
-                            <p>Web Developer</p>
+                            <h2>Mariam Fatima</h2>
+
+                            <p class="" style="text-align: center">
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: #f8b805"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: #f8b805"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: #f8b805"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: #f8b805"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star"
+                                style="color: #f8b805"
+                              ></i>
+                              <!-- <i class="fa fa-twitter"></i>
+                              <i class="fa fa-behance"></i>
+                              <i class="fa fa-youtube"></i>
+                              <i class="fa fa-dribble"></i> -->
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -1065,11 +1321,9 @@
                       <div class="col-md-6">
                         <div class="content">
                           <p>
-                            <span><i class="fa fa-quote-left"></i></span>lorem
-                            ipsum dolor sit amet lorem ipsum dolor sit amet
-                            lorem ipsum dolor sit amet lorem ipsum dolor sit
-                            amet lorem ipsum dolor sit amet lorem ipsum dolor
-                            sit amet
+                            <span><i class="fa fa-quote-left"></i></span>one of
+                            the best tutions consultancy in Hyderabad. very
+                            professional and have lot many tutors.
                           </p>
                           <p class="socials">
                             <i class="fa fa-twitter"></i>
@@ -1115,53 +1369,59 @@
 
       <!-- -------------------- section 7 --------------------------------------- -->
 
-      <div class="section-7 pt-5 pb-5">
+      <div
+        class="section-7 pt-5 pb-5"
+        data-aos="fade-left"
+        data-aos-duration="1500"
+      >
         <div class="container">
           <div class="section-title blue">
             <div class="section-top-title">
               <div class="dash"></div>
-              <span class="side-title">&ensp; Growing with our clients</span>
+              <span class="side-title">&ensp; Request for Chat</span>
             </div>
-            <h1>20 years of Experience</h1>
+            <h1>Get a one stop Business Solution</h1>
           </div>
           <div class="row pt-3">
             <div class="col-lg-6 col-md-12">
               <p>
-                Phosfluorescently engage worldwide methodologies with
-                web-enabled technology. Interactively coordinate proactive
-                e-commerce via process-centric outside the box thinking.
-                Phosfluorescently engage worldwide methodologies with
-                web-enabled technology. Interactively coordinate proactive
-                e-commerce via process-centric outside the box thinking.
-                Phosfluorescently engage worldwide methodologies with
-                web-enabled technology. Interactively coordinate proactive
-                e-commerce via process-centric outside the box thinking.
+                Please get in touch and our expert support team will answer all
+                your questions Visit our agency or simply send us an email
+                anytime you want. If you have any questions, please feel free to
+                contact us.
               </p>
-              <button type="button" class="btn btn-lg mt-3 purple-btn">
+
+              <a
+                href="https://wa.me/917097615132?text=Hello"
+                class="btn btn-lg mt-3 purple-btn"
+                style="width: 100%"
+                >Chat with us</a
+              >
+              <!-- <button type="button" class="btn btn-lg mt-3 purple-btn">
                 Chat with us
-              </button>
+              </button> -->
 
               <div class="section-7-icons">
                 <span
                   ><i class="fa-solid fa-fax"></i>
                   <h3>500+</h3>
-                  <p>Business advices given over 30 years</p></span
+                  <p>Business advices given over 15 years</p></span
                 >
                 <span
-                  ><i class="fa-solid fa-fax"></i>
-                  <h3>500+</h3>
-                  <p>Business advices given over 30 years</p></span
+                  ><i class="fa-solid fa-compass"></i>
+                  <h3>170+</h3>
+                  <p>Businesses guided over fifteen years</p></span
                 >
 
                 <span
-                  ><i class="fa-solid fa-fax"></i>
-                  <h3>500+</h3>
-                  <p>Business advices given over 30 years</p></span
+                  ><i class="fa-solid fa-trophy"></i>
+                  <h3>30+</h3>
+                  <p>Business Excellence awards achieved</p></span
                 >
               </div>
             </div>
             <div class="col-lg-6 col-md-12 section-7-img">
-              <img src="../assets/imgs/contactImg2.png" alt="" />
+              <img src=" ../assets/imgs/contactpagegif.gif" alt="" />
             </div>
           </div>
         </div>
@@ -1170,66 +1430,88 @@
 
       <!-- --------------------------- Section-8 --------------------------------- -->
 
-      <div class="section-8 pt-5 pb-5">
+      <div
+        class="section-8 pt-5 pb-5"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      >
         <div class="container">
           <div class="section-title">
             <div class="section-top-title">
               <div class="dash"></div>
-              <span class="side-title">&ensp; Where can we help you</span>
+              <span class="side-title">&ensp; Contact us with ease</span>
             </div>
-            <h1>Lorem Ipsum</h1>
+            <h1>Get in Touch</h1>
             <p class="pt-2" style="color: black">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              Visit our agency or simply send us an email anytime you want. If
+              you have any questions, please feel free to contact us.
             </p>
           </div>
           <div class="row pt-4">
             <div class="col-md-6">
-              <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Name</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Phone</label>
+                <input
+                  type="text"
+                  id="phone"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Email address</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
-                  <div id="emailHelp" class="form-text">
-                    We'll never share your email with anyone else.
-                  </div>
-                </div>
+              </div>
 
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Subject</label
-                  >
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                  ></textarea>
-                </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Subject</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1 message"
+                  rows="3"
+                ></textarea>
+              </div>
 
-                <button type="button" class="btn btn-lg mt-3 purple-btn">
-                  Message Us
-                </button>
-              </form>
+              <button onClick="SendMail()" class="btn btn-lg mt-3 purple-btn">
+                Message Us
+              </button>
             </div>
             <div class="col-md-6 map">
-              <iframe
+              <!-- <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.9233818149387!2d78.44756131435356!3d17.4154642065799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97379e24e8af%3A0x1037bbcd38e2ecb7!2sAlcazar%20Plaza!5e0!3m2!1sen!2sin!4v1668420592831!5m2!1sen!2sin"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe> -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.2879149765336!2d55.371058914280965!3d25.260898383866575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5db3b14f9b09%3A0xcae0462a35a0d09!2sDubai%20Airport%20Free%20Zone%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1668634500302!5m2!1sen!2sin"
                 width="100%"
                 height="450"
                 style="border: 0"
@@ -1242,43 +1524,78 @@
         </div>
       </div>
       <!-- --------------------------- Section 8 ------------------------------------ -->
-
+      <div class="whatsapp-icon">
+        <a href="https://wa.me/917097615132?text=Hello">
+          <img
+            src="./imgs/4-2-whatsapp-transparent.png"
+            width="50px"
+            height="50px"
+            alt=""
+          />
+        </a>
+      </div>
       <!-- --------------------------- Footer ------------------------------------ -->
-      <footer class="pt-5 pb-5">
+      <footer class="pt-5 pb-5" data-aos="fade-in" data-aos-duration="1500">
         <div class="container">
           <div class="row">
             <div class="col-md-6 footer-1">
               <div class="section-title blue">
                 <div class="section-top-title">
                   <div class="dash"></div>
-                  <span class="side-title"
-                    >&ensp; Growing with our clients</span
-                  >
+                  <span class="side-title">&ensp; Zims Consultancy</span>
                 </div>
-                <h1>20 years of Experience</h1>
+                <h1>Head Quarters</h1>
               </div>
 
               <p class="mt-4">
-                Organically grow the holistic world view of disruptive
-                innovation via empowerment. Organically grow the holistic world
-                view of disruptive innovation via empowerment.
+                This organisation grew from a tiny seed into a large tree to
+                provide fruits, shade, and oxygen to learners from all walks of
+                life in India and abroad. We gave shape to a concept that did
+                not exist in India, and we have been involved in education and
+                fields related to it for ten years
               </p>
 
               <div class="footer-1-icon">
-                <i class="fa-solid fa-phone"></i> 123-456-789
+                <i class="fa-solid fa-phone"></i>&ensp; +9171544507573
               </div>
 
               <div class="footer-1-icon">
-                <i class="fa-solid fa-envelope"></i> zimsconsultant@gmail.com
+                <i class="fa-solid fa-envelope"></i>&ensp;
+                zimsconsultant123456@gmail.com
               </div>
             </div>
             <div class="col-md-2 footer-2">
               <h3>Site Map</h3>
               <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact</li>
+                <li>
+                  <a
+                    href="./index.html"
+                    style="color: white; text-decoration: none"
+                  >
+                    Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./about.html"
+                    style="color: white; text-decoration: none"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./services.html"
+                    style="color: white; text-decoration: none"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./contact.html"
+                    style="color: white; text-decoration: none"
+                    >Contact</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="col-md-4 footer-3">
@@ -1291,10 +1608,22 @@
               </div>
 
               <div class="footer-3-icons">
-                <span><i class="fa-brands fa-facebook"></i></span>
-                <span><i class="fa-brands fa-twitter"></i></span>
-                <span><i class="fa-brands fa-linkedin"></i></span>
-                <span><i class="fa-brands fa-instagram"></i></span>
+                <span
+                  ><a href="#" style="color: white; text-decoration: none"
+                    ><i class="fa-brands fa-facebook"></i></a
+                ></span>
+                <span
+                  ><a href="#" style="color: white; text-decoration: none"
+                    ><i class="fa-brands fa-twitter"></i></a
+                ></span>
+                <span
+                  ><a href="#" style="color: white; text-decoration: none"
+                    ><i class="fa-brands fa-linkedin"></i></a
+                ></span>
+                <span
+                  ><a href="#" style="color: white; text-decoration: none"
+                    ><i class="fa-brands fa-instagram"></i></a
+                ></span>
               </div>
             </div>
           </div>
@@ -1302,6 +1631,19 @@
       </footer>
       <!-- --------------------------- Footer ------------------------------------ -->
     </div>
+
+    <!-- mail js -->
+    <script src="mail.js"></script>
+    <!-- onscroll animations -->
+
+    <!-- typing animation -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- typing animation -->
+    <script src="app.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -1329,5 +1671,10 @@
       src="https://kit.fontawesome.com/c364dc8f8a.js"
       crossorigin="anonymous"
     ></script>
+    <!-- aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

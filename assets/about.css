@@ -38,8 +38,17 @@ footer .container,
 .contactus {
   background-color: #356490;
 }
+
+.contactus #emailHelp {
+  color: white;
+}
+
 .contact-1 img {
   width: 100%;
+}
+
+.contactus label {
+  color: white;
 }
 
 /* .locations {
